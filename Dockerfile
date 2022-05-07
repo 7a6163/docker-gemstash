@@ -8,7 +8,7 @@ RUN bundle install
 
 FROM ruby:2.7-alpine
 
-RUN apk add --no-cache tini=0.19.0-r0
+RUN apk add --no-cache tini=0.19.0-r0 postgresql14-client=14.2-r0
 WORKDIR /app
 COPY --from=Builder /usr/local/bundle/ /usr/local/bundle/
 COPY Gemfile* ./
