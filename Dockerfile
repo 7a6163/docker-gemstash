@@ -11,9 +11,10 @@ FROM ruby:2.7-alpine
 RUN apk add --no-cache tini=0.19.0-r0
 WORKDIR /app
 COPY --from=Builder /usr/local/bundle/ /usr/local/bundle/
+COPY Gemfile* ./
 COPY config.yml /root/.gemstash/
 
-ENV RACK_ENV="production"
+ENV RACK_ENV production
 
 EXPOSE 9292
 ENTRYPOINT ["/sbin/tini", "--"]
