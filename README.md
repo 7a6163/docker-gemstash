@@ -1,7 +1,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/7a6163/docker-gemstash/release.yml)
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/7a6163/gemstash)
 
-# Docker image of Gem in a Box
+# Docker image of Gemstash
 
 ## Overview
 [gemstash](https://github.com/rubygems/gemstash) A RubyGems.org cache and private gem server.
